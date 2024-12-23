@@ -45,7 +45,7 @@ if(form.data.نوع_الخدمة == "اختر الخدمة" || form.data.from ==
   const PostToDiscord = () => {
     const description = Object.entries(form.data)
       .map((d) => `${d[0]} : ${d[1]} `)
-      .join("%0A");
+      .join("\n");
     Send(description)
     
   };
